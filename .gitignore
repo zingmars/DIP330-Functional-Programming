@@ -1,0 +1,5 @@
+.settings/
+bin/
+*.sw[a-p]
+*.tmp
+*.bak
