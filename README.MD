@@ -1,4 +1,4 @@
-Imperative perfect number checker
+Functional programming exercises
 ===
 
-Ingmārs Daniels Meļķis, 161RDB280, 05.09.2018
+Ingmārs Daniels Meļķis, 161RDB280
