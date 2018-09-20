@@ -26,11 +26,8 @@ public class PerfectNumber {
 		// return IntStream.rangeClosed(1, n).filter(i -> n % i == 0).boxed().collect(Collectors.toSet());
 
 		// With the optimisation
-		Integer sqr = (int)Math.ceil(Math.sqrt(n));
 		Set<Integer> set = new HashSet<Integer>();
-		//TODO: is there a way to do this within a single addAll instead of 2?
-		set.addAll(IntStream.rangeClosed(2, sqr).filter(i -> n % i == 0).boxed().collect(Collectors.toSet()));
-		set.addAll(set.stream().map( i -> (int)( n / i )).collect(Collectors.toSet()));
+		set.addAll(IntStream.rangeClosed(2, (int)Math.ceil(Math.sqrt(n))).filter(i -> n % i == 0).flatMap(i -> IntStream.of(i, (int)(n/i))).boxed().collect(Collectors.toSet()));
 		set.add(1);
 		set.add(n);
 		return set;
