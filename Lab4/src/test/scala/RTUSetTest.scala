@@ -31,12 +31,14 @@ class RTUSetTest extends FunSuite {
     assert(RTUSet.contains(s, 1))
     assert(!RTUSet.contains(s, 2))
   }
-  test("Exists set works correctly") {
+  test("Testing for element existence works correctly") {
     val s = RTUSet.union(RTUSet.singletonSet(1),RTUSet.singletonSet(2))
     val s1 = RTUSet.exists(s, (x: Int) => x == 1)
     val s2 = RTUSet.exists(s, (x: Int) => x == 2)
+    val s3 = RTUSet.exists(s, (x: Int) => x == 4)
     assert(s1)
     assert(s2)
+    assert(!s3)
   }
   test("Map set works correctly") {
     val s1 = RTUSet.map(RTUSet.singletonSet(1), (x: Int) => x * -1)
