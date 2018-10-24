@@ -44,12 +44,12 @@ object RTUSet {
   def forall(s: Set, p: Int => Boolean): Boolean = {
     def iter(a: Int): Boolean = {
       if (a > bound) true
-      else if (s(a) && p(a)) false
+      else if (s(a) && !p(a)) false
       else iter(a + 1)
     }
     iter(-bound)
   }
-  def exists(s: Set, p: Int => Boolean): Boolean = !forall(s,p)
+  def exists(s: Set, p: Int => Boolean): Boolean = !forall(s, x => !p(x))
 
   /**
     * Map function's output to a different function
