@@ -1,9 +1,13 @@
 target/
+project/
 *.log
 *.class
 *.iml
 *.ipr
 *.iws
-.idea
+.idea/workspace.xml
+.idea/modules.xml
+.idea/modules/
+.idea/libaries/
 out
 *.sw[a-p]

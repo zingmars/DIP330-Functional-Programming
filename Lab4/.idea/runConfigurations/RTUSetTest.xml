@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RTUSetTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+    <module name="untitled" />
+    <setting name="path" value="RTUSetTest" />
+    <setting name="vmparams" value="" />
+    <setting name="params" value="" />
+    <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+    <setting name="searchForTest" value="Across module dependencies" />
+    <setting name="showProgressMessages" value="true" />
+    <setting name="useSbt" value="false" />
+    <setting name="useUiWithSbt" value="false" />
+    <envs />
+    <setting name="testKind" value="Class" />
+    <setting name="path" value="RTUSetTest" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
