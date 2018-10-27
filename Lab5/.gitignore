@@ -1,0 +1,5 @@
+*.sw[a-p]
+out/*
+lib/*
+.idea/*
+*.iws
