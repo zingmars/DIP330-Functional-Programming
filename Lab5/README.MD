@@ -4,4 +4,4 @@ Made using IntelliJ IDEA.
 
 ![Isbn verifier test results](results/IsbnVerifier.png)
 ![Isogram test results](results/Isogram.png)
-![Word count test results](results/WordCount)
+![Word count test results](results/WordCount.png)
